@@ -1,7 +1,9 @@
-Responsive Calculator
+<h1>Responsive Calculator</h1>
+<br>
 This is a simple, responsive calculator web application built with HTML, CSS, and JavaScript. It supports basic arithmetic operations and is designed to work seamlessly across different screen sizes, from mobile phones to desktops.
-
-Features
+<br>
+<h2>Features</h2>
+<br>
 Basic arithmetic operations: addition, subtraction, multiplication, and division
 
 Clear and equals buttons for easy input management
@@ -12,7 +14,7 @@ Clean and modern UI with interactive button effects
 
 Error handling for invalid inputs
 
-Technologies Used
+<h2>Technologies Used</h2>
 HTML5 for structure
 
 CSS3 for styling and responsiveness using flexbox and grid

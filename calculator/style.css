@@ -1,0 +1,123 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+/* Calculator container */
+.calculator {
+  background: #2c3e50;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Display input */
+#display {
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #34495e;
+  color: #ecf0f1;
+  text-align: right;
+  margin-bottom: 20px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Buttons style */
+button {
+  background-color: #3b5998;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 0;
+  box-shadow: 0 5px #2a3d66;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #4a69ad;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #2a3d66;
+}
+
+/* Different color for Clear button */
+button.clear {
+  background-color: #e74c3c;
+  box-shadow: 0 5px #b03a2e;
+}
+
+button.clear:hover {
+  background-color: #f15b4f;
+}
+
+/* Different color for Equals button */
+button.equals {
+  background-color: #27ae60;
+  box-shadow: 0 5px #1e8449;
+}
+
+button.equals:hover {
+  background-color: #34c16f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  #display {
+    height: 45px;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #display {
+    font-size: 1rem;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
